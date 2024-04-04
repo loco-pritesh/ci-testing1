@@ -1,0 +1,45 @@
+.featureBlocks,
+.gameFeatures {
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.featureBlocks {
+  width: 1146px;
+  display: grid;
+  justify-content: flex-start;
+  gap: var(--gap-27xl-7);
+  grid-template-columns: repeat(4, minmax(189px, 1fr));
+}
+.gameFeatures {
+  align-self: stretch;
+  display: flex;
+  justify-content: center;
+  padding: 0 var(--padding-xl) var(--padding-95xl);
+  box-sizing: border-box;
+  flex-shrink: 0;
+  text-align: left;
+  font-size: var(--font-size-3xl);
+  color: var(--color-white);
+  font-family: var(--font-rubik);
+}
+@media screen and (max-width: 1050px) {
+  .featureBlocks {
+    justify-content: center;
+    grid-template-columns: repeat(2, minmax(189px, 328px));
+  }
+}
+@media screen and (max-width: 750px) {
+  .featureBlocks {
+    gap: 46.7px 23px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .featureBlocks {
+    grid-template-columns: minmax(189px, 1fr);
+  }
+  .gameFeatures {
+    padding-bottom: var(--padding-55xl);
+    box-sizing: border-box;
+  }
+}

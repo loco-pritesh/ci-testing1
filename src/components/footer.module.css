@@ -1,0 +1,328 @@
+.footerChild {
+  align-self: stretch;
+  height: 376px;
+  position: relative;
+  background-color: var(--color-gray-300);
+  display: none;
+}
+.aboutUs {
+  height: 26px;
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 77px;
+  z-index: 1;
+}
+.careers,
+.contactUs,
+.portfolio,
+.zeux {
+  margin: 0;
+}
+.zeuxPortfolioCareersContainer {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--base-size);
+  line-height: 186.3%;
+  z-index: 1;
+}
+.aboutUsParent {
+  position: absolute;
+  top: 6px;
+  left: 450px;
+  width: 372px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-mini);
+}
+.contactInfo,
+.contactUs1,
+.loremIpsumIs {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+.contactUs1 {
+  font-weight: 500;
+  min-width: 94px;
+}
+.contactInfo,
+.loremIpsumIs {
+  flex-shrink: 0;
+}
+.loremIpsumIs {
+  align-self: stretch;
+  height: 76px;
+}
+.contactInfo {
+  width: 141px;
+  height: 28px;
+  white-space: nowrap;
+}
+.contactAddress,
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.contactAddress {
+  align-self: stretch;
+  gap: var(--gap-2xs);
+  font-size: var(--base-size);
+}
+.contactDetails {
+  width: 282px;
+  gap: var(--gap-xl);
+  min-width: 282px;
+}
+.wrapperGroup5Child {
+  height: 100%;
+  width: 100%;
+  min-height: 34px;
+  z-index: 1;
+  object-fit: contain;
+  position: absolute;
+  left: 0;
+  top: 4px;
+  transform: scale(1.824);
+}
+.wrapperGroup5 {
+  height: 34px;
+  width: 34px;
+  position: relative;
+  min-height: 34px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapperGroup11Child {
+  height: 100%;
+  width: 100%;
+  min-height: 34px;
+  z-index: 1;
+  object-fit: contain;
+  position: absolute;
+  left: 0;
+  top: 4px;
+  transform: scale(1.824);
+}
+.wrapperGroup11 {
+  height: 34px;
+  width: 34px;
+  position: relative;
+  min-height: 34px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapperGroup10Child {
+  height: 100%;
+  width: 100%;
+  min-height: 34px;
+  z-index: 1;
+  object-fit: contain;
+  position: absolute;
+  left: 0;
+  top: 4px;
+  transform: scale(1.824);
+}
+.wrapperGroup10 {
+  height: 34px;
+  width: 34px;
+  position: relative;
+  min-height: 34px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapperGroup9Child {
+  height: 100%;
+  width: 100%;
+  min-height: 34px;
+  z-index: 1;
+  object-fit: contain;
+  position: absolute;
+  left: 0;
+  top: 4px;
+  transform: scale(1.824);
+}
+.wrapperGroup9 {
+  height: 34px;
+  width: 34px;
+  position: relative;
+  min-height: 34px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.socialIcons,
+.socialIconsArea {
+  display: flex;
+  align-items: flex-start;
+}
+.socialIcons {
+  height: 34px;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.socialIconsArea {
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-3xs);
+}
+.contactInfoArea {
+  position: absolute;
+  top: 6px;
+  left: 670px;
+  width: 549px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  max-width: 100%;
+}
+.logo {
+  margin: 0;
+  font-size: inherit;
+  line-height: 37px;
+  font-weight: 800;
+  font-family: inherit;
+  min-width: 68px;
+}
+.logo,
+.logo1,
+.loremIpsumIs1 {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+.loremIpsumIs1 {
+  align-self: stretch;
+  height: 58px;
+  flex-shrink: 0;
+}
+.logo1 {
+  width: 196px;
+}
+.logoParent,
+.loremIpsumIsSimplyDummyTeParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.loremIpsumIsSimplyDummyTeParent {
+  align-self: stretch;
+  gap: var(--gap-6xl);
+  font-size: var(--base-size);
+}
+.logoParent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 372px;
+  gap: var(--gap-mini);
+  font-size: var(--font-size-5xl);
+}
+.frameParent {
+  width: 1239px;
+  height: 167px;
+  position: relative;
+  max-width: 100%;
+}
+.footerContentChild {
+  margin-left: -101px;
+  width: 1440.8px;
+  height: 0.8px;
+  position: relative;
+  border-top: 0.8px solid var(--color-lightgray);
+  box-sizing: border-box;
+  max-width: 108%;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.footerContent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 0 var(--padding-81xl);
+  box-sizing: border-box;
+  gap: var(--gap-34xl);
+  max-width: 100%;
+}
+.copyright2021 {
+  position: relative;
+  line-height: 25px;
+  z-index: 1;
+}
+.copyrightNoticeArea,
+.footer {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-2xl) 0 var(--padding-xl);
+  font-size: var(--font-size-smi);
+}
+.footer {
+  margin-left: -1px;
+  background-color: var(--color-gray-300);
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-54xl) 0 var(--padding-10xl) var(--padding-12xs);
+  box-sizing: border-box;
+  gap: var(--gap-9xl-2);
+  max-width: 100%;
+  flex-shrink: 0;
+  z-index: 3;
+  text-align: left;
+  font-size: var(--font-size-mid);
+  color: var(--color-white);
+  font-family: var(--base);
+}
+@media screen and (max-width: 1200px) {
+  .footerContent {
+    padding-left: var(--padding-31xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 750px) {
+  .contactDetails {
+    flex: 1;
+  }
+  .contactInfoArea {
+    flex-wrap: wrap;
+  }
+  .frameParent {
+    height: auto;
+    min-height: 167;
+  }
+  .footerContent {
+    gap: 26px 53px;
+    padding-left: var(--padding-6xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .logo {
+    font-size: var(--font-size-lgi);
+    line-height: 29px;
+  }
+  .footer {
+    padding-top: var(--padding-28xl);
+    padding-bottom: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}
