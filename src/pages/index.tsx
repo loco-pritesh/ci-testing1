@@ -171,11 +171,11 @@ const Home: FunctionComponent = () => {
       <div className={styles.contentBlocks3}>
         <h2 className={styles.loremIpsum1}>Lorem Ipsum</h2>
       </div>
-      <div className={styles.testimonials}>
+      <section className={styles.testimonials}>
         <div
           className={styles.loremIpsumIs4}
         >{`Lorem Ipsum is simply dummy text of the printing and typesetting industry. `}</div>
-      </div>
+      </section>
       <FrameComponent />
       <Footer />
     </div>

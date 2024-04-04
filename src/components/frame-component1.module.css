@@ -24,6 +24,7 @@
   font-size: inherit;
   font-weight: 700;
   font-family: inherit;
+  text-shadow: 1px 0 0#fff, 0 1px 0#fff, -1px 0 0#fff, 0-1px 0#fff;
 }
 .loremIpsumIs1 {
   flex: 1;
