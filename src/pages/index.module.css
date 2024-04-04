@@ -2,7 +2,7 @@
   height: 462px;
   width: 822px;
   position: relative;
-  object-fit: cover;
+  object-fit: contain;
   max-width: 100%;
 }
 .joyStick1Icon {
