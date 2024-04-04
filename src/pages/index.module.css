@@ -2,7 +2,7 @@
   height: 462px;
   width: 822px;
   position: relative;
-  object-fit: cover;
+  object-fit: contain;
   max-width: 100%;
 }
 .joyStick1Icon {
@@ -70,7 +70,7 @@
   max-width: 100%;
   flex-shrink: 0;
   font-size: var(--font-size-xl);
-  color: #e87d0e;
+  color: #f53838;
 }
 .loremIpsumIs,
 .workThatWe {
@@ -270,7 +270,7 @@
   box-sizing: border-box;
   max-width: 100%;
   flex-shrink: 0;
-  text-align: center;
+  text-align: left;
   font-size: 35px;
   color: var(--color-white);
   font-family: var(--base);
@@ -545,6 +545,7 @@
   box-sizing: border-box;
   max-width: 100%;
   flex-shrink: 0;
+  color: var(--color-mediumpurple);
 }
 .loremIpsumIs4 {
   width: 545px;
@@ -569,6 +570,7 @@
   max-width: 100%;
   flex-shrink: 0;
   font-size: var(--base-size);
+  color: var(--color-mediumpurple);
 }
 .home {
   width: 100%;

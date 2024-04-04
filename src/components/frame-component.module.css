@@ -25,6 +25,7 @@
   align-self: stretch;
   position: relative;
   font-size: var(--font-size-mid);
+  text-align: right;
   z-index: 1;
 }
 .stayInTheLoopParent {
