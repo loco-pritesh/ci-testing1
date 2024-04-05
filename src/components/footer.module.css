@@ -2,7 +2,7 @@
   align-self: stretch;
   height: 376px;
   position: relative;
-  background-color: var(--color-gray-300);
+  background-color: var(--color-gray-200);
   display: none;
 }
 .aboutUs {
@@ -37,9 +37,9 @@
   justify-content: flex-start;
   gap: var(--gap-mini);
 }
-.contactInfo,
 .contactUs1,
-.loremIpsumIs {
+.loremIpsumIs,
+.socialMediaIcons {
   position: relative;
   display: inline-block;
   z-index: 1;
@@ -48,32 +48,32 @@
   font-weight: 500;
   min-width: 94px;
 }
-.contactInfo,
-.loremIpsumIs {
+.loremIpsumIs,
+.socialMediaIcons {
   flex-shrink: 0;
 }
 .loremIpsumIs {
   align-self: stretch;
   height: 76px;
 }
-.contactInfo {
+.socialMediaIcons {
   width: 141px;
   height: 28px;
   white-space: nowrap;
 }
-.contactAddress,
-.contactDetails {
+.contactUsParent,
+.loremIpsumIsSimplyDummyTeParent {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.contactAddress {
+.loremIpsumIsSimplyDummyTeParent {
   align-self: stretch;
   gap: var(--gap-2xs);
   font-size: var(--base-size);
 }
-.contactDetails {
+.contactUsParent {
   width: 282px;
   gap: var(--gap-xl);
   min-width: 282px;
@@ -162,23 +162,22 @@
   align-items: center;
   justify-content: center;
 }
-.socialIcons,
-.socialIconsArea {
-  display: flex;
-  align-items: flex-start;
-}
-.socialIcons {
+.wrapperGroup5Parent {
   height: 34px;
+  display: flex;
   flex-direction: row;
+  align-items: flex-start;
   justify-content: flex-start;
   gap: var(--gap-base);
 }
-.socialIconsArea {
+.frameWrapper {
+  display: flex;
   flex-direction: column;
+  align-items: flex-start;
   justify-content: flex-end;
   padding: 0 0 var(--padding-3xs);
 }
-.contactInfoArea {
+.frameContainer {
   position: absolute;
   top: 6px;
   left: 670px;
@@ -214,13 +213,13 @@
   width: 196px;
 }
 .logoParent,
-.loremIpsumIsSimplyDummyTeParent {
+.loremIpsumIsSimplyDummyTeGroup {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.loremIpsumIsSimplyDummyTeParent {
+.loremIpsumIsSimplyDummyTeGroup {
   align-self: stretch;
   gap: var(--gap-6xl);
   font-size: var(--base-size);
@@ -233,24 +232,24 @@
   gap: var(--gap-mini);
   font-size: var(--font-size-5xl);
 }
-.frameParent {
+.frameChild,
+.frameGroup {
   width: 1239px;
   height: 167px;
   position: relative;
   max-width: 100%;
 }
-.footerContentChild {
+.frameChild {
   margin-left: -101px;
   width: 1440.8px;
   height: 0.8px;
-  position: relative;
   border-top: 0.8px solid var(--color-lightgray);
   box-sizing: border-box;
-  max-width: 108%;
   flex-shrink: 0;
+  max-width: 108%;
   z-index: 1;
 }
-.footerContent {
+.frameParent {
   align-self: stretch;
   display: flex;
   flex-direction: column;
@@ -266,7 +265,7 @@
   line-height: 25px;
   z-index: 1;
 }
-.copyrightNoticeArea,
+.copyright2021LoremAllRigWrapper,
 .footer {
   align-self: stretch;
   display: flex;
@@ -278,7 +277,7 @@
 }
 .footer {
   margin-left: -1px;
-  background-color: var(--color-gray-300);
+  background-color: var(--color-gray-200);
   flex-direction: column;
   justify-content: flex-start;
   padding: var(--padding-54xl) 0 var(--padding-10xl) var(--padding-12xs);
@@ -293,23 +292,23 @@
   font-family: var(--base);
 }
 @media screen and (max-width: 1200px) {
-  .footerContent {
+  .frameParent {
     padding-left: var(--padding-31xl);
     box-sizing: border-box;
   }
 }
 @media screen and (max-width: 750px) {
-  .contactDetails {
+  .contactUsParent {
     flex: 1;
   }
-  .contactInfoArea {
+  .frameContainer {
     flex-wrap: wrap;
   }
-  .frameParent {
+  .frameGroup {
     height: auto;
     min-height: 167;
   }
-  .footerContent {
+  .frameParent {
     gap: 26px 53px;
     padding-left: var(--padding-6xl);
     box-sizing: border-box;

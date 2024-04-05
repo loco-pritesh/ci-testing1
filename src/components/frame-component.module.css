@@ -3,7 +3,7 @@
   width: 1170px;
   position: relative;
   border-radius: var(--br-mini);
-  background-color: var(--color-gray-200);
+  background-color: var(--color-chocolate-200);
   display: none;
   max-width: 100%;
 }
@@ -25,6 +25,7 @@
   align-self: stretch;
   position: relative;
   font-size: var(--font-size-mid);
+  text-align: right;
   z-index: 1;
 }
 .stayInTheLoopParent {
@@ -52,7 +53,7 @@
   font-weight: 300;
   z-index: 1;
 }
-.inputBox {
+.enterEmailAddressWrapper {
   width: 155.1px;
   display: flex;
   flex-direction: column;
@@ -61,7 +62,7 @@
   padding: var(--padding-5xs) 0 0;
   box-sizing: border-box;
 }
-.continueButtonChild {
+.frameInner {
   height: 37px;
   width: 105px;
   position: relative;
@@ -80,14 +81,14 @@
   min-width: 69.3px;
   z-index: 2;
 }
-.continueButton,
+.rectangleContainer,
 .rectangleGroup {
   border-radius: var(--br-5xs);
   flex-direction: row;
   align-items: flex-start;
   z-index: 1;
 }
-.continueButton {
+.rectangleContainer {
   cursor: pointer;
   border: 0;
   padding: var(--padding-5xs) var(--padding-smi) var(--padding-4xs)
@@ -98,8 +99,8 @@
   justify-content: flex-start;
   box-sizing: border-box;
 }
-.continueButton:hover {
-  background-color: var(--color-chocolate-300);
+.rectangleContainer:hover {
+  background-color: var(--color-chocolate-400);
 }
 .rectangleGroup {
   align-self: stretch;
@@ -109,15 +110,15 @@
     var(--padding-xl-6);
   gap: var(--gap-xl);
 }
-.emailInput,
-.newsletter,
+.frameWrapper,
+.homeInner,
 .rectangleGroup,
 .rectangleParent {
   display: flex;
   box-sizing: border-box;
   max-width: 100%;
 }
-.emailInput {
+.frameWrapper {
   width: 385.7px;
   flex-direction: column;
   align-items: flex-start;
@@ -127,7 +128,7 @@
   font-size: var(--font-size-smi);
   color: var(--color-gray-100);
 }
-.newsletter,
+.homeInner,
 .rectangleParent {
   flex-direction: row;
   justify-content: center;
@@ -135,7 +136,7 @@
 .rectangleParent {
   width: 1170px;
   border-radius: var(--br-mini);
-  background-color: var(--color-gray-200);
+  background-color: var(--color-chocolate-200);
   flex-wrap: wrap;
   align-items: flex-end;
   padding: var(--padding-21xl) var(--padding-31xl) var(--padding-23xl)
@@ -143,7 +144,7 @@
   gap: var(--gap-23xl-3);
   z-index: 3;
 }
-.newsletter {
+.homeInner {
   align-self: stretch;
   align-items: flex-start;
   padding: 0 var(--padding-xl) var(--padding-129xl);

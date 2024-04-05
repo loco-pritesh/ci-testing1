@@ -20,23 +20,23 @@ const FrameComponent4: FunctionComponent = () => {
   }, []);
 
   return (
-    <header className={styles.rightContent}>
-      <div className={styles.companyInfo}>
-        <div className={styles.logoBox}>
+    <header className={styles.homeInner}>
+      <div className={styles.frameParent}>
+        <div className={styles.logoWrapper}>
           <h2 className={styles.logo}>LOGO</h2>
         </div>
-        <div className={styles.navigationLinks}>
-          <div className={styles.navigation1}>
-            <div className={styles.homeLink}>
+        <div className={styles.frameWrapper}>
+          <div className={styles.frameGroup}>
+            <div className={styles.homeWrapper}>
               <div className={styles.home}>Home</div>
             </div>
-            <div className={styles.contactLink}>
-              <div className={styles.socialIcons} />
-              <div className={styles.socialIcons1} />
+            <div className={styles.iconPairParent}>
+              <div className={styles.iconPair} />
+              <div className={styles.iconPair1} />
             </div>
           </div>
         </div>
-        <nav className={styles.infoLinks}>
+        <nav className={styles.frameContainer}>
           <nav className={styles.aboutUsParent}>
             <div className={styles.aboutUs} onClick={onAboutUsTextClick}>
               About us
@@ -49,7 +49,7 @@ const FrameComponent4: FunctionComponent = () => {
             </div>
           </nav>
         </nav>
-        <div className={styles.socialMedia}>
+        <div className={styles.frameDiv}>
           <button
             className={styles.rectangleParent}
             onClick={onGroupButtonClick}

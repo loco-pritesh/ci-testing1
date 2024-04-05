@@ -6,8 +6,8 @@ const Footer: FunctionComponent = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.footerChild} />
-      <div className={styles.footerContent}>
-        <div className={styles.frameParent}>
+      <div className={styles.frameParent}>
+        <div className={styles.frameGroup}>
           <div className={styles.aboutUsParent}>
             <div className={styles.aboutUs}>About us</div>
             <div className={styles.zeuxPortfolioCareersContainer}>
@@ -17,18 +17,18 @@ const Footer: FunctionComponent = () => {
               <p className={styles.contactUs}>Contact us</p>
             </div>
           </div>
-          <div className={styles.contactInfoArea}>
-            <div className={styles.contactDetails}>
+          <div className={styles.frameContainer}>
+            <div className={styles.contactUsParent}>
               <div className={styles.contactUs1}>Contact us</div>
-              <div className={styles.contactAddress}>
+              <div className={styles.loremIpsumIsSimplyDummyTeParent}>
                 <div
                   className={styles.loremIpsumIs}
                 >{`Lorem Ipsum is simply dummy text of the printing and typesetting industry. `}</div>
-                <div className={styles.contactInfo}>+908 89097 890</div>
+                <div className={styles.socialMediaIcons}>+908 89097 890</div>
               </div>
             </div>
-            <div className={styles.socialIconsArea}>
-              <div className={styles.socialIcons}>
+            <div className={styles.frameWrapper}>
+              <div className={styles.wrapperGroup5Parent}>
                 <div className={styles.wrapperGroup5}>
                   <img
                     className={styles.wrapperGroup5Child}
@@ -66,7 +66,7 @@ const Footer: FunctionComponent = () => {
           </div>
           <div className={styles.logoParent}>
             <h3 className={styles.logo}>LOGO</h3>
-            <div className={styles.loremIpsumIsSimplyDummyTeParent}>
+            <div className={styles.loremIpsumIsSimplyDummyTeGroup}>
               <div
                 className={styles.loremIpsumIs1}
               >{`Lorem Ipsum is simply dummy text of the printing and typesetting industry. `}</div>
@@ -74,9 +74,9 @@ const Footer: FunctionComponent = () => {
             </div>
           </div>
         </div>
-        <div className={styles.footerContentChild} />
+        <div className={styles.frameChild} />
       </div>
-      <div className={styles.copyrightNoticeArea}>
+      <div className={styles.copyright2021LoremAllRigWrapper}>
         <div className={styles.copyright2021}>
           Copyright ® 2021 Lorem All rights Rcerved
         </div>

@@ -4,7 +4,7 @@ import * as styles from "./frame-component.module.css";
 
 const FrameComponent: FunctionComponent = () => {
   return (
-    <section className={styles.newsletter}>
+    <section className={styles.homeInner}>
       <div className={styles.rectangleParent}>
         <div className={styles.frameChild} />
         <div className={styles.stayInTheLoopParent}>
@@ -18,16 +18,16 @@ const FrameComponent: FunctionComponent = () => {
             >{`We promise not to spam you! `}</p>
           </div>
         </div>
-        <div className={styles.emailInput}>
+        <div className={styles.frameWrapper}>
           <div className={styles.rectangleGroup}>
             <div className={styles.frameItem} />
-            <div className={styles.inputBox}>
+            <div className={styles.enterEmailAddressWrapper}>
               <div className={styles.enterEmailAddress}>
                 Enter email address
               </div>
             </div>
-            <button className={styles.continueButton}>
-              <div className={styles.continueButtonChild} />
+            <button className={styles.rectangleContainer}>
+              <div className={styles.frameInner} />
               <div className={styles.continue1}>Continue</div>
             </button>
           </div>
