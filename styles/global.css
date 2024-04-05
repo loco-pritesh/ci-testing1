@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One:wght@400&display=swap");
 body {
   margin: 0;
   line-height: normal;
@@ -8,6 +9,7 @@ body {
   /* fonts */
   --base: Poppins;
   --font-rubik: Rubik;
+  --font-alumni-sans-inline-one: "Alumni Sans Inline One";
 
   /* font sizes */
   --font-size-smi: 13px;
@@ -31,6 +33,7 @@ body {
   --color-chocolate-100: #dc7000;
   --color-chocolate-200: #c75c00;
   --color-chocolate-300: #c25700;
+  --color-mediumpurple: #af8aff;
   --color-gainsboro: rgba(230, 230, 230, 0.11);
   --color-darkorange-100: #fa9021;
 
@@ -80,7 +83,7 @@ body {
   --padding-smi: 13px;
   --padding-4xs: 9px;
   --padding-3xl-2: 22.2px;
-  --padding-mid: 17px;
+  --padding-95xl: 114px;
   --padding-11xl: 30px;
   --padding-38xl: 57px;
   --padding-74xl: 93px;
@@ -89,7 +92,6 @@ body {
   --padding-41xl: 60px;
   --padding-69xl: 88px;
   --padding-10xs: 3px;
-  --padding-95xl: 114px;
   --padding-55xl: 74px;
   --padding-14xl: 33px;
   --padding-22xl: 41px;
@@ -102,8 +104,9 @@ body {
   --padding-12xl: 31px;
   --padding-6xs: 7px;
   --padding-2xs-1: 10.1px;
-  --padding-8xl-4: 27.4px;
+  --padding-9xl-5: 28.5px;
   --padding-2xs: 11px;
+  --padding-8xl-4: 27.4px;
 
   /* Border radiuses */
   --br-mini: 15px;

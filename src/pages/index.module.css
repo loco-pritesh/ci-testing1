@@ -48,29 +48,30 @@
   align-items: flex-start;
   justify-content: center;
   padding: 0 var(--padding-xl) 371px 324px;
-  box-sizing: border-box;
   position: relative;
-  max-width: 100%;
+}
+.dGameDev,
+.dGameDevWrapper,
+.leftContent {
+  box-sizing: border-box;
+  flex-shrink: 0;
 }
 .dGameDev {
-  width: 161.1px;
+  width: 181.1px;
   position: relative;
   line-height: 155.2%;
   display: inline-block;
-  flex-shrink: 0;
+  padding-left: var(--padding-xl);
 }
 .dGameDevWrapper {
-  width: 455.1px;
+  width: 328.1px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: center;
-  padding: 0 var(--padding-xl);
-  box-sizing: border-box;
-  max-width: 100%;
-  flex-shrink: 0;
+  justify-content: flex-end;
+  padding: 0 var(--padding-xl) 0 0;
   font-size: var(--font-size-xl);
-  color: #e87d0e;
+  color: #f53838;
 }
 .loremIpsumIs,
 .workThatWe {
@@ -113,12 +114,7 @@
 }
 .getMoreDetails {
   position: relative;
-  font-size: var(--base-size);
   font-weight: 500;
-  font-family: var(--base);
-  color: var(--color-white);
-  text-align: left;
-  z-index: 1;
 }
 .clientWorkBox,
 .rectangleParent {
@@ -127,19 +123,17 @@
   justify-content: flex-start;
 }
 .rectangleParent {
-  cursor: pointer;
-  border: 0;
-  padding: var(--padding-sm) var(--padding-11xl) var(--padding-mini);
-  background-color: transparent;
   border-radius: var(--br-21xl);
   background: linear-gradient(92.48deg, #fa8305, #fb9e3c);
   flex-direction: row;
+  padding: var(--padding-sm) var(--padding-11xl) var(--padding-mini);
   white-space: nowrap;
+  font-size: var(--base-size);
 }
 .clientWorkBox {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 147px;
   width: 527px;
   flex-direction: column;
   gap: 50px;
@@ -148,26 +142,16 @@
 .unity1Icon {
   position: absolute;
   top: 158px;
-  left: 502px;
+  left: 649px;
   width: 96px;
   height: 30px;
   object-fit: cover;
-}
-.servicesDescription {
-  height: 464px;
-  width: 598px;
-  position: relative;
-  max-width: 100%;
+  z-index: 1;
 }
 .services {
-  width: 892px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 0 var(--padding-xl) 163px;
-  box-sizing: border-box;
-  max-width: 100%;
+  width: 765px;
+  height: 627px;
+  position: relative;
   flex-shrink: 0;
   font-size: 50px;
 }
@@ -199,14 +183,6 @@
   text-align: left;
   display: inline-block;
   min-width: 79px;
-  z-index: 1;
-}
-.rectangleGroup,
-.trending,
-.trendingBox {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
 }
 .rectangleGroup {
   cursor: pointer;
@@ -221,20 +197,23 @@
 .rectangleGroup:hover {
   background-color: var(--color-gainsboro);
 }
+.rectangleGroup,
 .trending,
 .trendingBox {
-  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
 }
 .trendingBox {
   width: 1146px;
   justify-content: space-between;
+  max-width: 100%;
   gap: var(--gap-xl);
 }
 .trending {
   align-self: stretch;
   justify-content: center;
   padding: 0 var(--padding-xl) var(--padding-23xl);
-  box-sizing: border-box;
   flex-shrink: 0;
   text-align: left;
   font-size: 31px;
@@ -267,35 +246,35 @@
   align-items: flex-start;
   justify-content: center;
   padding: 0 var(--padding-xl) 52px;
-  box-sizing: border-box;
-  max-width: 100%;
   flex-shrink: 0;
-  text-align: center;
+  text-align: left;
   font-size: 35px;
   color: var(--color-white);
   font-family: var(--base);
 }
+.contentBlocks,
+.loremIpsum {
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
 .loremIpsum {
   margin: 0;
-  width: 209px;
+  width: 229px;
   position: relative;
   font-size: inherit;
   line-height: 40px;
   font-weight: 600;
   font-family: inherit;
   display: inline-block;
-  flex-shrink: 0;
+  padding-left: var(--padding-xl);
 }
 .contentBlocks {
-  width: 503px;
+  width: 376px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: center;
-  padding: 0 var(--padding-xl) var(--padding-mid);
-  box-sizing: border-box;
-  max-width: 100%;
-  flex-shrink: 0;
+  justify-content: flex-end;
+  padding: 0 var(--padding-xl) 17px 0;
 }
 .loremIpsumIs2 {
   position: absolute;
@@ -303,8 +282,7 @@
   left: 0;
   line-height: 187.5%;
   display: inline-block;
-  width: 545px;
-  height: 101px;
+  width: 238px;
 }
 .feedbackSourceChild {
   position: absolute;
@@ -318,13 +296,13 @@
   position: absolute;
   left: 0;
   width: 1146px;
+  z-index: 1;
 }
 .feedbackSourceItem {
   top: 67px;
   border-radius: 5px;
   height: 462px;
   object-fit: cover;
-  z-index: 1;
 }
 .feedbackSource {
   top: 80px;
@@ -343,34 +321,36 @@
   align-items: flex-start;
   justify-content: center;
   padding: 0 var(--padding-xl) 142px;
-  box-sizing: border-box;
-  max-width: 100%;
   flex-shrink: 0;
   text-align: left;
   font-size: var(--base-size);
   color: var(--color-white);
-  font-family: var(--base);
+  font-family: var(--font-alumni-sans-inline-one);
+}
+.ourRecentProjects,
+.projectsTitle {
+  box-sizing: border-box;
+  flex-shrink: 0;
 }
 .ourRecentProjects {
   margin: 0;
-  width: 305px;
+  width: 325px;
   position: relative;
   font-size: inherit;
   line-height: 187.5%;
   font-weight: 700;
   font-family: inherit;
   display: inline-block;
-  flex-shrink: 0;
-  z-index: 3;
+  max-width: 100%;
+  padding-left: var(--padding-xl);
 }
 .projectsTitle {
-  align-self: stretch;
+  width: 892px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: center;
-  padding: 0 var(--padding-2xl) 0 var(--padding-xl);
-  flex-shrink: 0;
+  justify-content: flex-end;
+  padding: 0 var(--padding-xl) 0 0;
   text-align: center;
 }
 .loremIpsumIs3 {
@@ -381,7 +361,6 @@
   display: inline-block;
   flex-shrink: 0;
   max-width: 100%;
-  z-index: 3;
 }
 .projectDetails {
   align-self: stretch;
@@ -390,8 +369,6 @@
   align-items: flex-start;
   justify-content: center;
   padding: 0 var(--padding-2xl) var(--padding-37xl) var(--padding-xl);
-  box-sizing: border-box;
-  max-width: 100%;
   flex-shrink: 0;
   text-align: center;
   font-size: 14px;
@@ -407,7 +384,6 @@
   object-fit: cover;
   min-height: 223px;
   max-width: 100%;
-  z-index: 3;
 }
 .frameInner,
 .rectangleIcon {
@@ -424,17 +400,16 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
-  max-width: 100%;
 }
 .rectangleContainer {
   width: 1170px;
   flex-wrap: wrap;
   gap: var(--gap-8xl);
+  max-width: 100%;
 }
 .contentBlocks1 {
   align-self: stretch;
   padding: 0 var(--padding-xl) 18px;
-  box-sizing: border-box;
   flex-shrink: 0;
 }
 .frameChild2,
@@ -445,7 +420,6 @@
   border-radius: var(--br-xl);
   object-fit: cover;
   min-height: 223px;
-  z-index: 3;
 }
 .frameChild2 {
   width: 246px;
@@ -468,17 +442,16 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
-  max-width: 100%;
 }
 .frameDiv {
   width: 1170px;
   flex-wrap: wrap;
   gap: var(--gap-8xl);
+  max-width: 100%;
 }
 .contentBlocks2 {
   align-self: stretch;
   padding: 0 var(--padding-xl) var(--padding-38xl);
-  box-sizing: border-box;
   flex-shrink: 0;
 }
 .rectangleDiv {
@@ -499,7 +472,6 @@
   text-align: left;
   display: inline-block;
   min-width: 79px;
-  z-index: 1;
 }
 .groupButton,
 .viewAllProjects {
@@ -515,65 +487,71 @@
   border-radius: var(--br-3xs);
   justify-content: flex-start;
   white-space: nowrap;
-  z-index: 3;
 }
 .viewAllProjects {
-  align-self: stretch;
-  justify-content: center;
-  padding: 0 var(--padding-2xl) 90px var(--padding-xl);
-  flex-shrink: 0;
-}
-.loremIpsum1 {
-  margin: 0;
-  width: 209px;
-  position: relative;
-  font-size: inherit;
-  line-height: 40px;
-  font-weight: 600;
-  font-family: inherit;
-  display: inline-block;
-  flex-shrink: 0;
-  z-index: 3;
-}
-.contentBlocks3 {
-  width: 479px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 0 var(--padding-xl) var(--padding-mid);
+  width: 809px;
+  justify-content: flex-end;
+  padding: 0 var(--padding-xl) 90px 0;
   box-sizing: border-box;
-  max-width: 100%;
   flex-shrink: 0;
 }
+.loremIpsum1,
 .loremIpsumIs4 {
-  width: 545px;
   position: relative;
   line-height: 187.5%;
   display: inline-block;
   flex-shrink: 0;
-  max-width: 100%;
-  z-index: 3;
+  box-sizing: border-box;
+  padding-left: var(--padding-xl);
 }
-.home,
-.testimonials {
+.loremIpsum1 {
+  margin: 0;
+  height: 40px;
+  width: 229px;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+}
+.loremIpsumIs4 {
+  width: 565px;
+  max-width: 100%;
+}
+.testitestitestimonial {
+  width: 992.5px;
+  margin: 0 !important;
+  position: absolute;
+  right: -316px;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 0 0 59px;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--base-size);
+  color: var(--color-mediumpurple);
+  font-family: var(--base);
+}
+.contentBlocks3,
+.home {
+  position: relative;
   display: flex;
   align-items: flex-start;
   box-sizing: border-box;
 }
-.testimonials {
-  width: 815px;
+.contentBlocks3 {
+  width: 676.5px;
+  height: 188px;
   flex-direction: row;
-  justify-content: center;
-  padding: 0 var(--padding-xl) 59px;
-  max-width: 100%;
+  justify-content: flex-end;
+  padding: 0 var(--padding-xl) var(--padding-95xl) 0;
   flex-shrink: 0;
-  font-size: var(--base-size);
+  color: var(--color-mediumpurple);
 }
 .home {
   width: 100%;
   height: 5382px;
-  position: relative;
   background: linear-gradient(180.96deg, #000, #4a2800);
   backdrop-filter: blur(14px);
   overflow: hidden;
@@ -608,17 +586,12 @@
     font-size: 40px;
     line-height: 62px;
   }
-  .services {
-    padding-bottom: 106px;
-    box-sizing: border-box;
-  }
   .currentlyTrendingGames {
     font-size: 25px;
     line-height: 46px;
   }
   .trendingBox {
     flex-wrap: wrap;
-    justify-content: center;
   }
   .loremIpsumIs1 {
     font-size: 28px;
