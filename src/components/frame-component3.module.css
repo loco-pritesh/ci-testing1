@@ -1,10 +1,10 @@
 .fire1Icon,
-.frameChild {
+.metricIcons {
   position: relative;
   overflow: hidden;
   flex-shrink: 0;
 }
-.frameChild {
+.metricIcons {
   align-self: stretch;
   height: 277px;
   border-radius: var(--br-xl);
@@ -15,7 +15,7 @@
   width: 25px;
   height: 25px;
 }
-.individualLabels {
+.fire1Wrapper {
   height: 33px;
   display: flex;
   flex-direction: column;
@@ -25,29 +25,28 @@
   box-sizing: border-box;
 }
 .followers {
-  margin: 0;
+  text-decoration: none;
   position: relative;
-  font-size: inherit;
   line-height: 187.5%;
   font-weight: 500;
-  font-family: inherit;
+  color: inherit;
 }
-.individualLabelsParent {
+.frameParent {
   flex-direction: row;
   gap: var(--gap-4xs);
 }
-.featureLabels,
-.individualLabelsParent,
-.rectangleParent {
+.frameParent,
+.frameWrapper,
+.metricIconsParent {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.featureLabels {
+.frameWrapper {
   flex-direction: row;
   padding: 0 var(--padding-22xl) 0 var(--padding-21xl);
 }
-.rectangleParent {
+.metricIconsParent {
   height: 343px;
   flex-direction: column;
   gap: var(--gap-6xl);

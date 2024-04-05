@@ -1,4 +1,4 @@
-.clientLogos {
+.formImageContainer {
   width: 100%;
   height: calc(100% - 126px);
   position: absolute;
@@ -24,13 +24,14 @@
   font-size: inherit;
   font-weight: 700;
   font-family: inherit;
+  text-shadow: 1px 0 0#72e6ff, 0 1px 0#72e6ff, -1px 0 0#72e6ff, 0-1px 0#72e6ff;
 }
 .loremIpsumIs1 {
   flex: 1;
   display: inline-block;
   max-width: 100%;
 }
-.moreCollaborations {
+.loremIpsumIsSimplyDummyTeWrapper {
   align-self: stretch;
   flex-direction: row;
   justify-content: flex-start;
@@ -38,20 +39,20 @@
   box-sizing: border-box;
   font-size: var(--base-size);
 }
-.collaborationBox,
-.collaborations,
-.moreCollaborations {
+.frameWrapper,
+.loremIpsumIsSimplyDummyTeParent,
+.loremIpsumIsSimplyDummyTeWrapper {
   display: flex;
   align-items: flex-start;
   max-width: 100%;
 }
-.collaborationBox {
+.loremIpsumIsSimplyDummyTeParent {
   width: 826px;
   flex-direction: column;
   justify-content: flex-start;
   gap: var(--gap-6xl);
 }
-.collaborations {
+.frameWrapper {
   width: 1045px;
   flex-direction: row;
   justify-content: center;
@@ -75,7 +76,7 @@
   font-weight: 500;
   z-index: 2;
 }
-.serviceOptions {
+.mobileGameDevelopmentParent {
   width: 1045px;
   display: flex;
   flex-direction: row;
@@ -98,19 +99,19 @@
 .dModelings {
   min-width: 110px;
 }
-.designList,
-.designOptions {
+.arVrDesignParent,
+.frameContainer {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   max-width: 100%;
 }
-.designList {
+.arVrDesignParent {
   width: 327px;
   justify-content: space-between;
   gap: var(--gap-xl);
 }
-.designOptions {
+.frameContainer {
   width: 1045px;
   justify-content: center;
   padding: 0 var(--padding-xl);
@@ -135,7 +136,7 @@
   z-index: 2;
 }
 .arrow2Icon,
-.processStepsChild {
+.frameChild {
   position: absolute;
   top: 389px;
   left: 306px;
@@ -152,7 +153,7 @@
   object-fit: contain;
 }
 .arrow3Icon,
-.processStepsItem {
+.frameItem {
   position: absolute;
   top: 389px;
   left: 612px;
@@ -169,7 +170,7 @@
   object-fit: contain;
 }
 .arrow4Icon,
-.processStepsInner {
+.frameInner {
   position: absolute;
   top: 389px;
   left: 909px;
@@ -202,13 +203,16 @@
   overflow: hidden;
   object-fit: contain;
 }
-.arrow6Icon,
-.processStepsChild1 {
-  position: absolute;
+.frameChild1 {
   top: 621px;
   left: 612px;
   width: 65px;
   height: 65px;
+}
+.arrow6Icon,
+.frameChild1,
+.frameChild2 {
+  position: absolute;
   z-index: 2;
 }
 .arrow6Icon {
@@ -219,15 +223,13 @@
   overflow: hidden;
   object-fit: contain;
 }
-.processStepsChild2 {
-  position: absolute;
+.frameChild2 {
   top: 621px;
   left: 827px;
   width: 65px;
   height: 65px;
-  z-index: 2;
 }
-.processSteps {
+.db4d123c4b390965f684f22d4bf138Parent {
   width: 1567px;
   height: calc(100% - 126px);
   position: absolute;
@@ -236,7 +238,7 @@
   right: -97px;
   bottom: 126px;
 }
-.clients {
+.formImageContainerParent {
   align-self: stretch;
   display: flex;
   flex-direction: column;
@@ -252,19 +254,19 @@
   flex-shrink: 0;
   text-align: left;
   font-size: var(--base-size);
-  color: var(--color-white);
+  color: var(--color-skyblue);
   font-family: var(--base);
 }
 @media screen and (max-width: 1200px) {
-  .clients {
+  .formImageContainerParent {
     gap: 97px 194px;
   }
 }
 @media screen and (max-width: 1050px) {
-  .serviceOptions {
+  .mobileGameDevelopmentParent {
     flex-wrap: wrap;
   }
-  .clients {
+  .formImageContainerParent {
     padding-top: var(--padding-41xl);
     padding-bottom: var(--padding-69xl);
     box-sizing: border-box;
@@ -275,7 +277,7 @@
     font-size: var(--font-size-5xl);
     line-height: 45px;
   }
-  .clients {
+  .formImageContainerParent {
     gap: 48px 194px;
   }
 }
@@ -284,10 +286,10 @@
     font-size: var(--font-size-lg);
     line-height: 34px;
   }
-  .designList {
+  .arVrDesignParent {
     flex-wrap: wrap;
   }
-  .clients {
+  .formImageContainerParent {
     gap: 24px 194px;
     padding-top: var(--padding-20xl);
     padding-bottom: var(--padding-38xl);

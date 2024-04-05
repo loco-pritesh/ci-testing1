@@ -10,13 +10,13 @@ import * as styles from "./index.module.css";
 const Home: FunctionComponent = () => {
   return (
     <div className={styles.home}>
-      <section className={styles.leftContent}>
+      <section className={styles.preScene61Parent}>
         <img
           className={styles.preScene61Icon}
           alt=""
           src="/prescene6-1@2x.png"
         />
-        <div className={styles.mainContent}>
+        <div className={styles.joyStick1Parent}>
           <img
             className={styles.joyStick1Icon}
             alt=""
@@ -40,33 +40,35 @@ const Home: FunctionComponent = () => {
       <div className={styles.dGameDevWrapper}>
         <b className={styles.dGameDev}>{`3D game Dev `}</b>
       </div>
-      <div className={styles.services}>
-        <div className={styles.servicesDescription}>
-          <div className={styles.clientWorkBox}>
-            <div className={styles.workThatWeProduceForOurCParent}>
-              <h1 className={styles.workThatWe}>
-                Work that we produce for our clients
-              </h1>
-              <div className={styles.loremIpsumIs}>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard.
-              </div>
-            </div>
-            <button className={styles.rectangleParent}>
-              <div className={styles.frameChild} />
-              <div className={styles.getMoreDetails}>Get more details</div>
-            </button>
+      <div className={styles.homeInner}>
+        <div className={styles.workThatWeProduceForOurCParent}>
+          <h1 className={styles.workThatWe}>
+            Work that we produce for our clients
+          </h1>
+          <div className={styles.unity1Wrapper}>
+            <img
+              className={styles.unity1Icon}
+              loading="lazy"
+              alt=""
+              src="/unity-1@2x.png"
+            />
           </div>
-          <img
-            className={styles.unity1Icon}
-            loading="lazy"
-            alt=""
-            src="/unity-1@2x.png"
-          />
         </div>
       </div>
-      <section className={styles.trending}>
-        <div className={styles.trendingBox}>
+      <div className={styles.loremIpsumIsSimplyDummyTeWrapper}>
+        <div className={styles.loremIpsumIs}>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard.
+        </div>
+      </div>
+      <div className={styles.homeChild}>
+        <button className={styles.rectangleParent}>
+          <div className={styles.frameChild} />
+          <div className={styles.getMoreDetails}>Get more details</div>
+        </button>
+      </div>
+      <section className={styles.frameSection}>
+        <div className={styles.currentlyTrendingGamesParent}>
           <h2 className={styles.currentlyTrendingGames}>
             Currently Trending Games
           </h2>
@@ -76,106 +78,106 @@ const Home: FunctionComponent = () => {
           </button>
         </div>
       </section>
-      <div className={styles.homeChild} />
+      <div className={styles.homeItem} />
       <FrameComponent2 />
-      <section className={styles.loremIpsumIsSimplyDummyTeWrapper}>
+      <section className={styles.loremIpsumIsSimplyDummyTeContainer}>
         <h1 className={styles.loremIpsumIs1}>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry.
         </h1>
       </section>
-      <div className={styles.contentBlocks}>
+      <div className={styles.loremIpsumWrapper}>
         <h2 className={styles.loremIpsum}>Lorem Ipsum</h2>
       </div>
-      <section className={styles.clientFeedback}>
-        <div className={styles.feedbackBox}>
+      <section className={styles.homeInner1}>
+        <div className={styles.loremIpsumIsSimplyDummyTeParent}>
           <div className={styles.loremIpsumIs2}>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s,
           </div>
-          <div className={styles.feedbackSource}>
+          <div className={styles.frameParent}>
             <img
-              className={styles.feedbackSourceChild}
+              className={styles.frameInner}
               loading="lazy"
               alt=""
               src="/group-21.svg"
             />
             <img
-              className={styles.feedbackSourceItem}
+              className={styles.inputFieldIcon}
               alt=""
-              src="/rectangle-4@2x.png"
+              src="/input-field@2x.png"
             />
           </div>
         </div>
       </section>
       <FrameComponent1 />
-      <div className={styles.projectsTitle}>
+      <div className={styles.ourRecentProjectsWrapper}>
         <h2 className={styles.ourRecentProjects}>Our Recent Projects</h2>
       </div>
-      <section className={styles.projectDetails}>
+      <section className={styles.loremIpsumIsSimplyDummyTeFrame}>
         <div
           className={styles.loremIpsumIs3}
         >{`Lorem Ipsum is simply dummy text of the printing and typesetting industry. `}</div>
       </section>
-      <section className={styles.contentBlocks1}>
+      <section className={styles.homeInner2}>
         <div className={styles.rectangleContainer}>
           <img
-            className={styles.frameInner}
+            className={styles.rectangleIcon}
             loading="lazy"
             alt=""
             src="/rectangle-15@2x.png"
           />
           <img
-            className={styles.rectangleIcon}
+            className={styles.frameChild1}
             loading="lazy"
             alt=""
             src="/rectangle-16@2x.png"
           />
           <img
-            className={styles.frameChild1}
+            className={styles.frameChild2}
             loading="lazy"
             alt=""
             src="/rectangle-17@2x.png"
           />
         </div>
       </section>
-      <section className={styles.contentBlocks2}>
+      <section className={styles.homeInner3}>
         <div className={styles.frameDiv}>
           <img
-            className={styles.frameChild2}
+            className={styles.frameChild3}
             loading="lazy"
             alt=""
             src="/rectangle-19@2x.png"
           />
           <img
-            className={styles.frameChild3}
+            className={styles.frameChild4}
             loading="lazy"
             alt=""
             src="/rectangle-18@2x.png"
           />
           <img
-            className={styles.frameChild4}
+            className={styles.frameChild5}
             loading="lazy"
             alt=""
             src="/rectangle-20@2x.png"
           />
         </div>
       </section>
-      <div className={styles.viewAllProjects}>
+      <div className={styles.homeInner4}>
         <button className={styles.groupButton}>
           <div className={styles.rectangleDiv} />
           <div className={styles.seeAll1}>SEE ALL</div>
         </button>
       </div>
-      <div className={styles.contentBlocks3}>
+      <div className={styles.loremIpsumContainer}>
         <h2 className={styles.loremIpsum1}>Lorem Ipsum</h2>
       </div>
-      <div className={styles.testimonials}>
+      <section className={styles.loremIpsumIsSimplyDummyTeWrapper1}>
         <div
           className={styles.loremIpsumIs4}
         >{`Lorem Ipsum is simply dummy text of the printing and typesetting industry. `}</div>
-      </div>
+      </section>
       <FrameComponent />
       <Footer />
     </div>

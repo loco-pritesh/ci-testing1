@@ -9,7 +9,7 @@
   min-width: 82px;
   white-space: nowrap;
 }
-.logoBox {
+.logoWrapper {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -22,17 +22,17 @@
   display: inline-block;
   min-width: 50.6px;
   flex-shrink: 0;
-  debug_commit: 3996a;
+  debug_commit: f6aba90;
 }
-.homeLink {
+.homeWrapper {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
   padding: 0 0 0 var(--padding-sm);
 }
-.socialIcons,
-.socialIcons1 {
+.iconPair,
+.iconPair1 {
   position: absolute;
   top: 0;
   left: 0;
@@ -41,28 +41,28 @@
   width: 31px;
   height: 4px;
 }
-.socialIcons1 {
+.iconPair1 {
   left: 34px;
   width: 5px;
 }
-.contactLink {
+.iconPairParent {
   width: 39px;
   height: 4px;
   position: relative;
   flex-shrink: 0;
-  debug_commit: 3996a;
+  debug_commit: f6aba90;
 }
-.navigation1,
-.navigationLinks {
+.frameGroup,
+.frameWrapper {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.navigation1 {
+.frameGroup {
   gap: var(--gap-6xs-8);
 }
-.navigationLinks {
+.frameWrapper {
   width: 116px;
   padding: var(--padding-mini) 0 0;
   box-sizing: border-box;
@@ -88,7 +88,7 @@
   min-width: 45.3px;
 }
 .aboutUsParent,
-.infoLinks {
+.frameContainer {
   margin: 0;
   display: flex;
   align-items: flex-start;
@@ -103,7 +103,7 @@
   color: var(--color-white);
   font-family: var(--base);
 }
-.infoLinks {
+.frameContainer {
   width: 366.8px;
   flex-direction: column;
   justify-content: flex-start;
@@ -116,7 +116,7 @@
   width: 131.8px;
   position: relative;
   border-radius: var(--br-7xs);
-  background-color: var(--color-darkorange-100);
+  background-color: var(--color-darkorange);
   display: none;
 }
 .contactUs {
@@ -133,37 +133,37 @@
   cursor: pointer;
   border: 0;
   padding: var(--padding-2xs-1) var(--padding-8xl-4) var(--padding-2xs);
-  background-color: var(--color-darkorange-100);
+  background-color: var(--color-darkorange);
   border-radius: var(--br-7xs);
   flex-direction: row;
   white-space: nowrap;
   z-index: 1;
 }
 .rectangleParent:hover {
-  background-color: var(--color-chocolate-200);
+  background-color: var(--color-chocolate-300);
 }
-.companyInfo,
-.rectangleParent,
-.rightContent,
-.socialMedia {
+.frameDiv,
+.frameParent,
+.homeInner,
+.rectangleParent {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.socialMedia {
+.frameDiv {
   flex-direction: column;
   padding: var(--padding-6xs) 0 0;
 }
-.companyInfo,
-.rightContent {
+.frameParent,
+.homeInner {
   flex-direction: row;
   max-width: 100%;
 }
-.companyInfo {
+.frameParent {
   flex: 1;
   gap: var(--gap-17xl-6);
 }
-.rightContent {
+.homeInner {
   align-self: stretch;
   padding: 0 var(--padding-44xl) var(--padding-82xl) var(--padding-36xl);
   box-sizing: border-box;
@@ -174,7 +174,7 @@
   font-family: var(--base);
 }
 @media screen and (max-width: 1200px) {
-  .infoLinks {
+  .frameContainer {
     display: none;
   }
 }
@@ -182,13 +182,13 @@
   .aboutUsParent {
     display: none;
   }
-  .infoLinks {
+  .frameContainer {
     width: 0;
   }
-  .companyInfo {
+  .frameParent {
     gap: 36.6px 18px;
   }
-  .rightContent {
+  .homeInner {
     padding-left: var(--padding-8xl);
     padding-right: var(--padding-12xl);
     box-sizing: border-box;

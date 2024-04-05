@@ -1,17 +1,17 @@
-.featureBlocks,
-.gameFeatures {
+.frameParent,
+.homeInner {
   flex-direction: row;
   align-items: flex-start;
   max-width: 100%;
 }
-.featureBlocks {
+.frameParent {
   width: 1146px;
   display: grid;
   justify-content: flex-start;
   gap: var(--gap-27xl-7);
   grid-template-columns: repeat(4, minmax(189px, 1fr));
 }
-.gameFeatures {
+.homeInner {
   align-self: stretch;
   display: flex;
   justify-content: center;
@@ -24,21 +24,21 @@
   font-family: var(--font-rubik);
 }
 @media screen and (max-width: 1050px) {
-  .featureBlocks {
-    justify-content: center;
+  .frameParent {
     grid-template-columns: repeat(2, minmax(189px, 328px));
+    justify-content: center;
   }
 }
 @media screen and (max-width: 750px) {
-  .featureBlocks {
+  .frameParent {
     gap: 46.7px 23px;
   }
 }
 @media screen and (max-width: 450px) {
-  .featureBlocks {
+  .frameParent {
     grid-template-columns: minmax(189px, 1fr);
   }
-  .gameFeatures {
+  .homeInner {
     padding-bottom: var(--padding-55xl);
     box-sizing: border-box;
   }

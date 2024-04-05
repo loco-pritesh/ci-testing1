@@ -5,20 +5,32 @@ import * as styles from "./frame-component2.module.css";
 
 const FrameComponent2: FunctionComponent = () => {
   return (
-    <section className={styles.gameFeatures}>
-      <div className={styles.featureBlocks}>
-        <FrameComponent3 rectangle23="/rectangle-23@2x.png" />
+    <section className={styles.homeInner}>
+      <div className={styles.frameParent}>
+        <FrameComponent3 metricIcons="/rectangle-23@2x.png" />
         <FrameComponent3
-          rectangle23="/rectangle-24@2x.png"
+          metricIcons="/rectangle-24@2x.png"
           propPadding="0px var(--padding-22xl)"
+          followersFlex="unset"
+          followersAlignSelf="unset"
+          followersDisplay="inline-block"
+          followersWidth="136px"
         />
         <FrameComponent3
-          rectangle23="/rectangle-25@2x.png"
+          metricIcons="/rectangle-25@2x.png"
           propPadding="0px var(--padding-22xl)"
+          followersFlex="unset"
+          followersAlignSelf="stretch"
+          followersDisplay="flex"
+          followersWidth="136px"
         />
         <FrameComponent3
-          rectangle23="/rectangle-26@2x.png"
+          metricIcons="/rectangle-26@2x.png"
           propPadding="0px var(--padding-14xl)"
+          followersFlex="unset"
+          followersAlignSelf="unset"
+          followersDisplay="inline-block"
+          followersWidth="unset"
         />
       </div>
     </section>
