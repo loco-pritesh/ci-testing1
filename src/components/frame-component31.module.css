@@ -1,57 +1,64 @@
 .ourTeam {
   margin: 0;
-  width: 139px;
+  width: 159px;
   position: relative;
   font-size: inherit;
   line-height: 180.5%;
   font-weight: 600;
   font-family: inherit;
   display: inline-block;
+  box-sizing: border-box;
+  padding-right: var(--padding-xl);
+}
+.frameGroup,
+.frameParent,
+.functionCall {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.frameGroup {
+  flex: 1;
+  flex-direction: row;
+  gap: var(--gap-9xl);
+  min-width: 402px;
+}
+.frameParent,
+.functionCall {
+  box-sizing: border-box;
 }
 .frameParent {
-  align-self: stretch;
-  display: flex;
+  width: 1284px;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: center;
+  padding: 0 var(--padding-xl) 0 0;
   gap: var(--gap-9xl);
   font-size: var(--font-size-lgi);
 }
-.colorPalette,
-.colorPaletteWrapper {
-  display: flex;
-  align-items: flex-start;
-  max-width: 100%;
-}
-.colorPalette {
-  flex: 1;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: var(--gap-34xl);
-  flex-shrink: 0;
-  debug_commit: 3996a;
-}
-.colorPaletteWrapper {
+.functionCall {
   width: 1396px;
-  flex-direction: row;
-  justify-content: flex-end;
-  padding: 0 var(--padding-47xl) var(--padding-smi);
-  box-sizing: border-box;
+  flex-direction: column;
+  padding: 0 0 var(--padding-smi) var(--padding-47xl);
+  gap: var(--gap-34xl);
   text-align: left;
   font-size: var(--font-size-6xl);
   color: var(--color-white);
   font-family: var(--base);
 }
 @media screen and (max-width: 1275px) {
-  .colorPaletteWrapper {
+  .functionCall {
     padding-left: var(--padding-14xl);
     padding-right: var(--padding-14xl);
     box-sizing: border-box;
   }
 }
 @media screen and (max-width: 750px) {
-  .colorPalette {
+  .frameGroup {
+    flex-wrap: wrap;
+    min-width: 100%;
+  }
+  .functionCall {
     gap: 26px 53px;
   }
 }

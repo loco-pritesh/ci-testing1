@@ -1,16 +1,16 @@
 import * as React from "react";
 import { FunctionComponent } from "react";
-import * as styles from "./footer.module.css";
+import * as styles from "./footer1.module.css";
 
 const Footer: FunctionComponent = () => {
   return (
     <div className={styles.footer}>
       <div className={styles.footerChild} />
-      <div className={styles.decisionMaker}>
-        <div className={styles.errorHandler}>
-          <div className={styles.frameParent}>
-            <div className={styles.splitterWrapper}>
-              <div className={styles.splitter}>
+      <div className={styles.nestedList}>
+        <div className={styles.edgeConnectorWrapper}>
+          <div className={styles.edgeConnector}>
+            <div className={styles.inputFilter}>
+              <div className={styles.outputCollector}>
                 <img
                   className={styles.asset21}
                   alt=""
@@ -22,13 +22,13 @@ const Footer: FunctionComponent = () => {
                 <div className={styles.zeux}>@Zeux</div>
               </div>
             </div>
-            <div className={styles.frameGroup}>
-              <div className={styles.aboutUsParent}>
+            <div className={styles.dataComparator}>
+              <div className={styles.dataTransformer}>
                 <div className={styles.aboutUs}>About us</div>
                 <div className={styles.contactUs}>Contact us</div>
               </div>
-              <div className={styles.imageProcessorParent}>
-                <div className={styles.imageProcessor}>
+              <div className={styles.dataMapper}>
+                <div className={styles.dataParser}>
                   <div className={styles.zeuxPortfolioCareersContainer}>
                     <p className={styles.zeux1}>Zeux</p>
                     <p className={styles.portfolio}>Portfolio</p>
@@ -39,25 +39,25 @@ const Footer: FunctionComponent = () => {
                     className={styles.loremIpsumIs1}
                   >{`Lorem Ipsum is simply dummy text of the printing and typesetting industry. `}</div>
                 </div>
-                <div className={styles.webParser}>
-                  <div className={styles.div}>+908 89097 890</div>
+                <div className={styles.constantProvider}>
+                  <div className={styles.variableHolder}>+908 89097 890</div>
                 </div>
               </div>
             </div>
-            <div className={styles.fileHandlerWrapper}>
-              <div className={styles.fileHandler}>
+            <div className={styles.functionBuilder}>
+              <div className={styles.sequenceProcessor}>
                 <img
-                  className={styles.fileHandlerChild}
+                  className={styles.sequenceProcessorChild}
                   alt=""
                   src="/group-5.svg"
                 />
                 <img
-                  className={styles.fileHandlerItem}
+                  className={styles.sequenceProcessorItem}
                   alt=""
                   src="/group-11.svg"
                 />
                 <img
-                  className={styles.fileHandlerInner}
+                  className={styles.sequenceProcessorInner}
                   alt=""
                   src="/group-10.svg"
                 />
@@ -66,9 +66,9 @@ const Footer: FunctionComponent = () => {
             </div>
           </div>
         </div>
-        <div className={styles.decisionMakerChild} />
+        <div className={styles.queueManager} />
       </div>
-      <div className={styles.copyright2021KodexAllRigWrapper}>
+      <div className={styles.bufferPool}>
         <div className={styles.copyright2021}>
           Copyright ® 2021 KodeX All rights Rcerved
         </div>

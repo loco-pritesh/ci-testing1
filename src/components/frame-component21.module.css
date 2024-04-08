@@ -17,12 +17,14 @@
   align-self: stretch;
   font-size: var(--base-size);
 }
-.opacityController {
-  width: 545px;
+.loremIpsumParent {
+  width: 565px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  padding: 0 var(--padding-xl) 0 0;
+  box-sizing: border-box;
   gap: var(--gap-13xl);
   max-width: 100%;
 }
@@ -43,7 +45,6 @@
   font-weight: 500;
   font-family: inherit;
   display: inline-block;
-  z-index: 1;
 }
 .subscribeToReceive,
 .wePromiseNot {
@@ -53,9 +54,8 @@
   align-self: stretch;
   position: relative;
   font-size: var(--font-size-mid);
-  z-index: 1;
 }
-.subcomponents {
+.outputSplitter {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -78,7 +78,6 @@
   align-self: stretch;
   position: relative;
   font-weight: 300;
-  z-index: 1;
 }
 .enterEmailAddressWrapper {
   width: 155.1px;
@@ -89,7 +88,7 @@
   padding: var(--padding-5xs) 0 0;
   box-sizing: border-box;
 }
-.freeformShapeChild {
+.frameInner {
   height: 37px;
   width: 105px;
   position: relative;
@@ -106,16 +105,14 @@
   text-align: center;
   display: inline-block;
   min-width: 69.3px;
-  z-index: 2;
 }
-.freeformShape,
+.rectangleContainer,
 .rectangleGroup {
   border-radius: var(--br-5xs);
   flex-direction: row;
   align-items: flex-start;
-  z-index: 1;
 }
-.freeformShape {
+.rectangleContainer {
   cursor: pointer;
   border: 0;
   padding: var(--padding-5xs) var(--padding-smi) var(--padding-4xs)
@@ -126,7 +123,7 @@
   justify-content: flex-start;
   box-sizing: border-box;
 }
-.freeformShape:hover {
+.rectangleContainer:hover {
   background-color: var(--color-chocolate-300);
 }
 .rectangleGroup {
@@ -137,14 +134,15 @@
     var(--padding-xl-6);
   gap: var(--gap-xl);
 }
-.layerContainer,
+.dataSplitter,
+.logicEvaluator,
 .rectangleGroup,
 .rectangleParent {
   display: flex;
   box-sizing: border-box;
   max-width: 100%;
 }
-.layerContainer {
+.logicEvaluator {
   width: 385.7px;
   flex-direction: column;
   align-items: flex-start;
@@ -154,8 +152,11 @@
   font-size: var(--font-size-smi);
   color: var(--color-gray-100);
 }
+.dataSplitter,
 .rectangleParent {
   align-self: stretch;
+}
+.rectangleParent {
   border-radius: var(--br-mini);
   background-color: var(--color-gray-200);
   flex-direction: row;
@@ -166,26 +167,13 @@
     var(--padding-37xl);
   gap: var(--gap-23xl-3);
 }
-.blendModeHandler,
-.blendModeHandlerWrapper {
-  display: flex;
-  align-items: flex-start;
-  max-width: 100%;
-  flex-shrink: 0;
-}
-.blendModeHandler {
-  width: 1170px;
+.dataSplitter {
   flex-direction: column;
-  justify-content: flex-start;
-  gap: var(--gap-55xl);
-  debug_commit: 3996a;
-}
-.blendModeHandlerWrapper {
-  align-self: stretch;
-  flex-direction: row;
+  align-items: flex-start;
   justify-content: center;
   padding: 0 var(--padding-xl) var(--padding-4xs);
-  box-sizing: border-box;
+  gap: var(--gap-55xl);
+  flex-shrink: 0;
   text-align: left;
   font-size: var(--font-size-11xl);
   color: var(--color-white);
@@ -197,7 +185,7 @@
     padding-right: var(--padding-6xl);
     box-sizing: border-box;
   }
-  .blendModeHandler {
+  .dataSplitter {
     gap: 37px 74px;
   }
 }
@@ -206,19 +194,19 @@
     font-size: var(--font-size-5xl);
     line-height: 45px;
   }
-  .opacityController {
+  .loremIpsumParent {
     gap: 16px 32px;
   }
   .stayInThe {
     font-size: var(--font-size-5xl);
   }
-  .subcomponents {
+  .outputSplitter {
     min-width: 100%;
   }
   .rectangleParent {
     gap: var(--gap-2xl);
   }
-  .blendModeHandler {
+  .dataSplitter {
     gap: 18px 74px;
   }
 }

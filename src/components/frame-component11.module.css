@@ -18,7 +18,6 @@
 .loremIpsumIs {
   position: relative;
   display: inline-block;
-  z-index: 1;
 }
 .loremIpsumIs {
   align-self: stretch;
@@ -28,25 +27,23 @@
 .lorem {
   width: 196px;
 }
-.logoParent,
-.loremIpsumIsSimplyDummyTeParent {
+.conditionStack,
+.functionSequence {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.loremIpsumIsSimplyDummyTeParent {
+.conditionStack {
   align-self: stretch;
   gap: var(--gap-6xl);
   font-size: var(--base-size);
 }
-.logoParent {
-  position: absolute;
-  top: 0;
-  left: 0;
+.functionSequence {
   width: 372px;
   gap: var(--gap-mini);
-  font-size: var(--font-size-5xl);
+  min-width: 372px;
+  max-width: 100%;
 }
 .aboutUs {
   height: 26px;
@@ -54,7 +51,6 @@
   font-weight: 500;
   display: inline-block;
   min-width: 77px;
-  z-index: 1;
 }
 .careers,
 .contactUs,
@@ -67,28 +63,24 @@
   position: relative;
   font-size: var(--base-size);
   line-height: 186.3%;
-  z-index: 1;
 }
-.aboutUsParent {
-  position: absolute;
-  top: 6px;
-  left: 450px;
+.functionSequence1 {
   width: 372px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   gap: var(--gap-mini);
+  max-width: 100%;
 }
 .contactUs1 {
   position: relative;
   font-weight: 500;
   display: inline-block;
   min-width: 94px;
-  z-index: 1;
 }
-.letterSpacing,
-.loremIpsumIs1 {
+.loremIpsumIs1,
+.splitterQueue {
   position: relative;
   display: inline-block;
   flex-shrink: 0;
@@ -96,27 +88,25 @@
 .loremIpsumIs1 {
   align-self: stretch;
   height: 76px;
-  z-index: 1;
 }
-.letterSpacing {
+.splitterQueue {
   width: 141px;
   height: 28px;
   white-space: nowrap;
-  z-index: 2;
 }
-.contactUsParent,
-.loremIpsumIsSimplyDummyTeGroup {
+.connectionStack,
+.storageQueue {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.loremIpsumIsSimplyDummyTeGroup {
+.storageQueue {
   align-self: stretch;
   gap: var(--gap-2xs);
   font-size: var(--base-size);
 }
-.contactUsParent {
+.connectionStack {
   width: 282px;
   gap: var(--gap-xl);
   min-width: 282px;
@@ -125,7 +115,6 @@
   height: 100%;
   width: 100%;
   min-height: 34px;
-  z-index: 1;
   object-fit: contain;
   position: absolute;
   left: 0;
@@ -137,7 +126,6 @@
   width: 34px;
   position: relative;
   min-height: 34px;
-  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -146,7 +134,6 @@
   height: 100%;
   width: 100%;
   min-height: 34px;
-  z-index: 1;
   object-fit: contain;
   position: absolute;
   left: 0;
@@ -158,7 +145,6 @@
   width: 34px;
   position: relative;
   min-height: 34px;
-  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -167,7 +153,6 @@
   height: 100%;
   width: 100%;
   min-height: 34px;
-  z-index: 1;
   object-fit: contain;
   position: absolute;
   left: 0;
@@ -179,7 +164,6 @@
   width: 34px;
   position: relative;
   min-height: 34px;
-  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -188,7 +172,6 @@
   height: 100%;
   width: 100%;
   min-height: 34px;
-  z-index: 1;
   object-fit: contain;
   position: absolute;
   left: 0;
@@ -200,54 +183,74 @@
   width: 34px;
   position: relative;
   min-height: 34px;
-  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.alignment,
-.wrapperGroup5Parent {
+.evaluatorQueue,
+.mergerQueue {
   display: flex;
   align-items: flex-start;
 }
-.wrapperGroup5Parent {
+.evaluatorQueue {
   height: 34px;
   flex-direction: row;
   justify-content: flex-start;
   gap: var(--gap-base);
 }
-.alignment {
+.mergerQueue {
   flex-direction: column;
   justify-content: flex-end;
   padding: 0 0 var(--padding-3xs);
 }
-.frameParent {
-  position: absolute;
-  top: 6px;
-  left: 670px;
-  width: 549px;
+.operatorStack {
+  flex: 1;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
   justify-content: space-between;
+  max-width: 100%;
   gap: var(--gap-xl);
+  z-index: 1;
+  margin-left: -152px;
+}
+.functionSequenceParent,
+.outputSequenceInner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
   max-width: 100%;
 }
-.customShape {
-  height: 167px;
-  width: 1219px;
-  position: relative;
-  max-width: 100%;
+.functionSequenceParent {
+  align-self: stretch;
+  flex-direction: row;
 }
-.starShape {
-  width: 1421px;
+.outputSequenceInner {
+  flex: 1;
+  flex-direction: column;
+  padding: var(--padding-7xs) 0 0;
+  box-sizing: border-box;
+  min-width: 500px;
+  font-size: var(--font-size-mid);
+}
+.inputSequence,
+.outputSequence {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  max-width: 100%;
+}
+.outputSequence {
+  width: 1219px;
+  justify-content: flex-start;
+  gap: var(--gap-59xl);
+}
+.inputSequence {
+  width: 1421px;
   justify-content: center;
   padding: 0 var(--padding-xl);
   box-sizing: border-box;
-  max-width: 100%;
+  flex-shrink: 0;
 }
 .dataAggregator {
   align-self: stretch;
@@ -257,7 +260,7 @@
   box-sizing: border-box;
   z-index: 1;
 }
-.starShapeParent {
+.processorChain {
   align-self: stretch;
   display: flex;
   flex-direction: column;
@@ -271,7 +274,7 @@
   line-height: 25px;
   z-index: 1;
 }
-.inputFilter {
+.conditionSplitter {
   align-self: stretch;
   display: flex;
   flex-direction: row;
@@ -281,52 +284,59 @@
   font-size: var(--font-size-smi);
 }
 .footer,
-.roundedShape {
+.footerWrapper {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  box-sizing: border-box;
   max-width: 100%;
+  flex-shrink: 0;
 }
 .footer {
   flex: 1;
   background-color: var(--color-gray-300);
   flex-direction: column;
   padding: var(--padding-54xl) 0 var(--padding-10xl);
+  box-sizing: border-box;
   gap: var(--gap-9xl-2);
-  flex-shrink: 0;
   debug_commit: 3996a;
   text-align: left;
-  font-size: var(--font-size-mid);
+  font-size: var(--font-size-5xl);
   color: var(--color-white);
   font-family: var(--base);
 }
-.roundedShape {
+.footerWrapper {
   align-self: stretch;
   flex-direction: row;
-  padding: 0 0 var(--padding-539xl);
 }
 @media screen and (max-width: 1100px) {
-  .roundedShape {
+  .functionSequence {
+    flex: 1;
+  }
+  .outputSequence {
+    flex-wrap: wrap;
+  }
+  .footerWrapper {
     padding-bottom: var(--padding-344xl);
     box-sizing: border-box;
   }
 }
 @media screen and (max-width: 750px) {
-  .contactUsParent {
+  .connectionStack {
     flex: 1;
   }
-  .frameParent {
+  .operatorStack {
     flex-wrap: wrap;
   }
-  .customShape {
-    height: auto;
-    min-height: 167;
+  .outputSequenceInner {
+    min-width: 100%;
   }
-  .starShapeParent {
+  .outputSequence {
+    gap: 78px 39px;
+  }
+  .processorChain {
     gap: 26px 53px;
   }
-  .roundedShape {
+  .footerWrapper {
     padding-bottom: var(--padding-217xl);
     box-sizing: border-box;
   }
@@ -335,6 +345,12 @@
   .logo {
     font-size: var(--font-size-lgi);
     line-height: 29px;
+  }
+  .functionSequence {
+    min-width: 100%;
+  }
+  .outputSequence {
+    gap: 78px 19px;
   }
   .footer {
     padding-top: var(--padding-28xl);

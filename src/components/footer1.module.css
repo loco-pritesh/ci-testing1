@@ -27,18 +27,18 @@
   width: 196px;
   height: 23px;
 }
-.splitter,
-.splitterWrapper {
+.inputFilter,
+.outputCollector {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-.splitter {
+.outputCollector {
   align-self: stretch;
   justify-content: flex-start;
   gap: var(--gap-4xl-5);
 }
-.splitterWrapper {
+.inputFilter {
   width: 372px;
   justify-content: flex-end;
   padding: 0 0 var(--padding-4xs);
@@ -60,7 +60,7 @@
   align-self: stretch;
   width: 94px;
 }
-.aboutUsParent {
+.dataTransformer {
   width: 314px;
   height: 26px;
   display: flex;
@@ -94,12 +94,12 @@
   display: inline-block;
   z-index: 2;
 }
-.div,
-.imageProcessor {
+.dataParser,
+.variableHolder {
   position: relative;
   flex-shrink: 0;
 }
-.imageProcessor {
+.dataParser {
   flex: 1;
   display: flex;
   flex-direction: row;
@@ -107,88 +107,87 @@
   justify-content: flex-start;
   max-width: 103%;
 }
-.div {
+.variableHolder {
   align-self: stretch;
   height: 28px;
   display: inline-block;
   white-space: nowrap;
   z-index: 2;
 }
-.frameGroup,
-.imageProcessorParent,
-.webParser {
+.constantProvider,
+.dataComparator,
+.dataMapper {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   box-sizing: border-box;
 }
-.webParser {
+.constantProvider {
   width: 141px;
   flex-direction: column;
   padding: var(--padding-73xl) 0 0;
   margin-left: -152px;
 }
-.frameGroup,
-.imageProcessorParent {
+.dataComparator,
+.dataMapper {
   max-width: 100%;
 }
-.imageProcessorParent {
+.dataMapper {
   align-self: stretch;
   flex-direction: row;
   padding: 0 var(--padding-2xs) 0 0;
   font-size: var(--base-size);
 }
-.frameGroup {
+.dataComparator {
   width: 507px;
   flex-direction: column;
   padding: 0 var(--padding-116xl) 0 0;
   gap: var(--gap-mini);
   font-size: var(--font-size-mid);
 }
-.fileHandlerChild,
-.fileHandlerInner,
-.fileHandlerItem,
-.groupIcon {
+.groupIcon,
+.sequenceProcessorChild,
+.sequenceProcessorInner,
+.sequenceProcessorItem {
   height: 34px;
   width: 34px;
   position: relative;
   min-height: 34px;
   z-index: 1;
 }
-.fileHandler,
-.fileHandlerWrapper {
+.sequenceProcessor {
   display: flex;
-  align-items: flex-start;
-}
-.fileHandler {
   flex-direction: row;
+  align-items: flex-start;
   justify-content: flex-start;
   gap: var(--gap-base);
 }
-.fileHandlerWrapper {
+.functionBuilder {
+  display: flex;
   flex-direction: column;
+  align-items: flex-start;
   justify-content: flex-end;
   padding: 0 0 var(--padding-3xs);
 }
-.errorHandler,
-.frameParent {
+.edgeConnector,
+.edgeConnectorWrapper {
   display: flex;
   flex-direction: row;
   max-width: 100%;
 }
-.frameParent {
+.edgeConnector {
   align-items: flex-end;
   justify-content: flex-start;
   gap: var(--gap-59xl);
 }
-.errorHandler {
+.edgeConnectorWrapper {
   width: 1421px;
   align-items: flex-start;
   justify-content: center;
   padding: 0 var(--padding-xl);
   box-sizing: border-box;
 }
-.decisionMakerChild {
+.queueManager {
   align-self: stretch;
   height: 0.8px;
   position: relative;
@@ -196,7 +195,7 @@
   box-sizing: border-box;
   z-index: 1;
 }
-.decisionMaker {
+.nestedList {
   align-self: stretch;
   display: flex;
   flex-direction: column;
@@ -213,14 +212,14 @@
   display: inline-block;
   z-index: 1;
 }
-.copyright2021KodexAllRigWrapper,
+.bufferPool,
 .footer {
   display: flex;
   align-items: flex-start;
   box-sizing: border-box;
   max-width: 100%;
 }
-.copyright2021KodexAllRigWrapper {
+.bufferPool {
   width: 1427px;
   height: 25px;
   flex-direction: row;
@@ -245,28 +244,28 @@
   font-family: var(--base);
 }
 @media screen and (max-width: 1275px) {
-  .frameParent {
+  .edgeConnector {
     flex-wrap: wrap;
   }
 }
 @media screen and (max-width: 750px) {
-  .frameGroup {
+  .dataComparator {
     padding-right: var(--padding-48xl);
     box-sizing: border-box;
   }
-  .frameParent {
+  .edgeConnector {
     gap: 78px 39px;
   }
-  .decisionMaker {
+  .nestedList {
     gap: 26px 53px;
   }
 }
 @media screen and (max-width: 450px) {
-  .frameGroup {
+  .dataComparator {
     padding-right: var(--padding-xl);
     box-sizing: border-box;
   }
-  .frameParent {
+  .edgeConnector {
     gap: 78px 19px;
   }
   .footer {

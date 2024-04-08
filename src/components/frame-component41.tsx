@@ -1,20 +1,20 @@
 import * as React from "react";
 import { FunctionComponent } from "react";
-import * as styles from "./frame-component4.module.css";
+import * as styles from "./frame-component41.module.css";
 
 const FrameComponent4: FunctionComponent = () => {
   return (
-    <section className={styles.decompressor}>
+    <section className={styles.aboutUsInner}>
       <div className={styles.rectangleParent}>
         <div className={styles.frameChild} />
         <img
-          className={styles.dataGathererIcon}
+          className={styles.dataAggregatorIcon}
           loading="lazy"
           alt=""
           src="/rectangle-251@2x.png"
         />
-        <div className={styles.shapeContainer}>
-          <div className={styles.loremIpsumParent}>
+        <div className={styles.logicBranch}>
+          <div className={styles.inputCollector}>
             <div className={styles.loremIpsum}>Lorem ipsum</div>
             <h2
               className={styles.loremIpsumIs}
