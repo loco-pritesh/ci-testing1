@@ -4,76 +4,87 @@ import * as styles from "./frame-component1.module.css";
 
 const FrameComponent1: FunctionComponent = () => {
   return (
-    <section className={styles.clients}>
-      <div className={styles.clientLogos} />
-      <div className={styles.collaborations}>
-        <div className={styles.collaborationBox}>
-          <h2 className={styles.loremIpsumIs}>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
-          </h2>
-          <div className={styles.moreCollaborations}>
-            <div className={styles.loremIpsumIs1}>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s,
+    <section className={styles.roundedShape}>
+      <footer className={styles.footer}>
+        <div className={styles.footerChild} />
+        <div className={styles.starShapeParent}>
+          <div className={styles.starShape}>
+            <div className={styles.customShape}>
+              <div className={styles.logoParent}>
+                <h3 className={styles.logo}>LOGO</h3>
+                <div className={styles.loremIpsumIsSimplyDummyTeParent}>
+                  <div
+                    className={styles.loremIpsumIs}
+                  >{`Lorem Ipsum is simply dummy text of the printing and typesetting industry. `}</div>
+                  <div className={styles.lorem}>@Lorem</div>
+                </div>
+              </div>
+              <div className={styles.aboutUsParent}>
+                <div className={styles.aboutUs}>About us</div>
+                <div className={styles.zeuxPortfolioCareersContainer}>
+                  <p className={styles.zeux}>Zeux</p>
+                  <p className={styles.portfolio}>Portfolio</p>
+                  <p className={styles.careers}>Careers</p>
+                  <p className={styles.contactUs}>Contact us</p>
+                </div>
+              </div>
+              <div className={styles.frameParent}>
+                <div className={styles.contactUsParent}>
+                  <div className={styles.contactUs1}>Contact us</div>
+                  <div className={styles.loremIpsumIsSimplyDummyTeGroup}>
+                    <div
+                      className={styles.loremIpsumIs1}
+                    >{`Lorem Ipsum is simply dummy text of the printing and typesetting industry. `}</div>
+                    <div className={styles.letterSpacing}>+908 89097 890</div>
+                  </div>
+                </div>
+                <div className={styles.alignment}>
+                  <div className={styles.wrapperGroup5Parent}>
+                    <div className={styles.wrapperGroup5}>
+                      <img
+                        className={styles.wrapperGroup5Child}
+                        loading="lazy"
+                        alt=""
+                        src="/group-5.svg"
+                      />
+                    </div>
+                    <div className={styles.wrapperGroup11}>
+                      <img
+                        className={styles.wrapperGroup11Child}
+                        loading="lazy"
+                        alt=""
+                        src="/group-11.svg"
+                      />
+                    </div>
+                    <div className={styles.wrapperGroup10}>
+                      <img
+                        className={styles.wrapperGroup10Child}
+                        loading="lazy"
+                        alt=""
+                        src="/group-10.svg"
+                      />
+                    </div>
+                    <div className={styles.wrapperGroup9}>
+                      <img
+                        className={styles.wrapperGroup9Child}
+                        loading="lazy"
+                        alt=""
+                        src="/group-9.svg"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+          <div className={styles.dataAggregator} />
         </div>
-      </div>
-      <div className={styles.serviceOptions}>
-        <div className={styles.mobileGameDevelopment}>
-          Mobile Game Development
+        <div className={styles.inputFilter}>
+          <div className={styles.copyright2021}>
+            Copyright ® 2021 Lorem All rights Rcerved
+          </div>
         </div>
-        <div className={styles.pcGameDevelopment}>PC Game Development</div>
-        <div className={styles.ps4GameDevelopment}>PS4 Game Development</div>
-        <div className={styles.arvrSolutions}>AR/VR Solutions</div>
-      </div>
-      <div className={styles.designOptions}>
-        <div className={styles.designList}>
-          <div className={styles.arVrDesign}>AR/ VR design</div>
-          <div className={styles.dModelings}>3D Modelings</div>
-        </div>
-      </div>
-      <div className={styles.processSteps}>
-        <img
-          className={styles.db4d123c4b390965f684f22d4bf138Icon}
-          alt=""
-          src="/db4d123c4b390965f684f22d4bf13849-1@2x.png"
-        />
-        <img className={styles.arrow1Icon} alt="" src="/arrow-1.svg" />
-        <img
-          className={styles.processStepsChild}
-          loading="lazy"
-          alt=""
-          src="/group-48.svg"
-        />
-        <img className={styles.arrow2Icon} alt="" src="/arrow-1.svg" />
-        <img
-          className={styles.processStepsItem}
-          loading="lazy"
-          alt=""
-          src="/group-49.svg"
-        />
-        <img className={styles.arrow3Icon} alt="" src="/arrow-1.svg" />
-        <img className={styles.processStepsInner} alt="" src="/group-50.svg" />
-        <img className={styles.arrow4Icon} alt="" src="/arrow-1.svg" />
-        <img className={styles.groupIcon} alt="" src="/group-51.svg" />
-        <img className={styles.arrow5Icon} alt="" src="/arrow-5.svg" />
-        <img
-          className={styles.processStepsChild1}
-          loading="lazy"
-          alt=""
-          src="/group-52.svg"
-        />
-        <img className={styles.arrow6Icon} alt="" src="/arrow-5.svg" />
-        <img
-          className={styles.processStepsChild2}
-          loading="lazy"
-          alt=""
-          src="/group-53.svg"
-        />
-      </div>
+      </footer>
     </section>
   );
 };

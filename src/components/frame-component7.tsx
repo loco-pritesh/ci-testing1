@@ -1,13 +1,13 @@
 import * as React from "react";
 import { FunctionComponent } from "react";
-import * as styles from "./frame-component.module.css";
+import * as styles from "./frame-component7.module.css";
 
 const FrameComponent: FunctionComponent = () => {
   return (
-    <div className={styles.xMLHandlerWrapper}>
-      <div className={styles.xMLHandler}>
-        <div className={styles.xMLHandlerChild} />
-        <div className={styles.jSONHandler}>
+    <div className={styles.fifoBuffer}>
+      <div className={styles.lruCache}>
+        <div className={styles.lruCacheChild} />
+        <div className={styles.linkedList}>
           <h2 className={styles.loremIpsum}>Lorem Ipsum</h2>
           <div
             className={styles.loremIpsumIs}
@@ -15,7 +15,7 @@ const FrameComponent: FunctionComponent = () => {
         </div>
         <div className={styles.rectangleParent}>
           <div className={styles.frameChild} />
-          <div className={styles.archiveHandler}>
+          <div className={styles.priorityQueue}>
             <h2 className={styles.stayInThe}>Stay in the loop</h2>
             <div className={styles.subscribeToReceiveContainer}>
               <p className={styles.subscribeToReceive}>
@@ -26,16 +26,16 @@ const FrameComponent: FunctionComponent = () => {
               >{`We promise not to spam you! `}</p>
             </div>
           </div>
-          <div className={styles.shapeGenerator}>
+          <div className={styles.treeMap}>
             <div className={styles.rectangleGroup}>
               <div className={styles.frameItem} />
-              <div className={styles.plugInManager}>
+              <div className={styles.binarySearchTree}>
                 <div className={styles.enterEmailAddress}>
                   Enter email address
                 </div>
               </div>
-              <div className={styles.styleEditor}>
-                <div className={styles.styleEditorChild} />
+              <div className={styles.graph}>
+                <div className={styles.graphChild} />
                 <div className={styles.continue1}>Continue</div>
               </div>
             </div>

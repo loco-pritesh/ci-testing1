@@ -41,29 +41,27 @@ const Home: FunctionComponent = () => {
         <b className={styles.dGameDev}>{`3D game Dev `}</b>
       </div>
       <div className={styles.services}>
-        <div className={styles.servicesDescription}>
-          <div className={styles.clientWorkBox}>
-            <div className={styles.workThatWeProduceForOurCParent}>
-              <h1 className={styles.workThatWe}>
-                Work that we produce for our clients
-              </h1>
-              <div className={styles.loremIpsumIs}>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard.
-              </div>
+        <div className={styles.clientWorkBox}>
+          <div className={styles.workThatWeProduceForOurCParent}>
+            <h1 className={styles.workThatWe}>
+              Work that we produce for our clients
+            </h1>
+            <div className={styles.loremIpsumIs}>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard.
             </div>
-            <button className={styles.rectangleParent}>
-              <div className={styles.frameChild} />
-              <div className={styles.getMoreDetails}>Get more details</div>
-            </button>
           </div>
-          <img
-            className={styles.unity1Icon}
-            loading="lazy"
-            alt=""
-            src="/unity-1@2x.png"
-          />
+          <div className={styles.rectangleParent}>
+            <div className={styles.frameChild} />
+            <div className={styles.getMoreDetails}>Get more details</div>
+          </div>
         </div>
+        <img
+          className={styles.unity1Icon}
+          loading="lazy"
+          alt=""
+          src="/unity-1@2x.png"
+        />
       </div>
       <section className={styles.trending}>
         <div className={styles.trendingBox}>
@@ -170,11 +168,11 @@ const Home: FunctionComponent = () => {
       </div>
       <div className={styles.contentBlocks3}>
         <h2 className={styles.loremIpsum1}>Lorem Ipsum</h2>
-      </div>
-      <div className={styles.testimonials}>
-        <div
-          className={styles.loremIpsumIs4}
-        >{`Lorem Ipsum is simply dummy text of the printing and typesetting industry. `}</div>
+        <section className={styles.testitestitestimonial}>
+          <div
+            className={styles.loremIpsumIs4}
+          >{`Lorem Ipsum is simply dummy text of the printing and typesetting industry. `}</div>
+        </section>
       </div>
       <FrameComponent />
       <Footer />

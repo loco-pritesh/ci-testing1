@@ -1,18 +1,17 @@
-.dataGathererIcon,
-.frameChild {
-  position: relative;
-  max-width: 100%;
-}
 .frameChild {
   height: 603px;
   width: 1440px;
+  position: relative;
   background-color: var(--color-gray-200);
   display: none;
+  max-width: 100%;
 }
-.dataGathererIcon {
+.dataAggregatorIcon {
   width: 496px;
+  position: relative;
   max-height: 100%;
   object-fit: cover;
+  max-width: 100%;
   z-index: 1;
 }
 .loremIpsum {
@@ -42,30 +41,32 @@
 .loremIpsumIs1 {
   line-height: 202.5%;
 }
-.loremIpsumParent {
-  align-self: stretch;
+.aboutUsInner,
+.inputCollector,
+.logicBranch,
+.rectangleParent {
   display: flex;
-  flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+}
+.inputCollector {
+  align-self: stretch;
+  flex-direction: column;
   gap: var(--gap-sm);
 }
-.decompressor,
-.rectangleParent,
-.shapeContainer {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  box-sizing: border-box;
+.aboutUsInner,
+.logicBranch,
+.rectangleParent {
   max-width: 100%;
 }
-.shapeContainer {
+.logicBranch {
   width: 536px;
   flex-direction: column;
   padding: var(--padding-2xl) 0 0;
+  box-sizing: border-box;
   min-width: 536px;
 }
-.decompressor,
+.aboutUsInner,
 .rectangleParent {
   flex-direction: row;
   flex-shrink: 0;
@@ -74,20 +75,20 @@
   flex: 1;
   background-color: var(--color-gray-200);
   padding: var(--padding-94xl) var(--padding-91xl) 0;
+  box-sizing: border-box;
   gap: var(--gap-76xl);
   debug_commit: 3996a;
 }
-.decompressor {
+.aboutUsInner {
   align-self: stretch;
-  padding: 0 0 var(--padding-9xs);
   text-align: left;
   font-size: var(--base-size);
   color: var(--color-white);
   font-family: var(--base);
 }
 @media screen and (max-width: 1275px) {
-  .dataGathererIcon,
-  .shapeContainer {
+  .dataAggregatorIcon,
+  .logicBranch {
     flex: 1;
   }
   .rectangleParent {
@@ -98,9 +99,12 @@
     padding-right: var(--padding-36xl);
     box-sizing: border-box;
   }
+  .aboutUsInner {
+    height: auto;
+  }
 }
 @media screen and (max-width: 1100px) {
-  .shapeContainer {
+  .logicBranch {
     min-width: 100%;
   }
 }
