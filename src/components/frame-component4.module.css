@@ -127,12 +127,12 @@
   text-align: left;
   display: inline-block;
   min-width: 75.9px;
-  z-index: 1;
 }
 .rectangleParent {
   cursor: pointer;
   border: 0;
-  padding: var(--padding-2xs-1) var(--padding-8xl-4) var(--padding-2xs);
+  padding: var(--padding-2xs-1) var(--padding-9xl-5) var(--padding-2xs)
+    var(--padding-8xl-4);
   background-color: var(--color-darkorange-100);
   border-radius: var(--br-7xs);
   flex-direction: row;
@@ -157,16 +157,15 @@
 .companyInfo,
 .rightContent {
   flex-direction: row;
-  max-width: 100%;
 }
 .companyInfo {
   flex: 1;
   gap: var(--gap-17xl-6);
+  max-width: 100%;
 }
 .rightContent {
   align-self: stretch;
   padding: 0 var(--padding-44xl) var(--padding-82xl) var(--padding-36xl);
-  box-sizing: border-box;
   flex-shrink: 0;
   text-align: left;
   font-size: var(--font-size-10xl);
