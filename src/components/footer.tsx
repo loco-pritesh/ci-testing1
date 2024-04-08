@@ -1,6 +1,6 @@
 import * as React from "react";
 import { FunctionComponent } from "react";
-import * as styles from "./footer.module.css";
+import * as styles from "./footer1.module.css";
 
 const Footer: FunctionComponent = () => {
   return (

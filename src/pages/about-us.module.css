@@ -1,19 +1,18 @@
-.aboutUs1,
-.valueProcessor {
+.aboutUs,
+.stringConcatenator {
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
 }
-.valueProcessor {
+.stringConcatenator {
   align-self: stretch;
   flex-direction: row;
   flex-shrink: 0;
   debug_commit: 3996a;
   max-width: 100%;
 }
-.aboutUs1 {
+.aboutUs {
   width: 100%;
-  height: 3704px;
   position: relative;
   background: linear-gradient(179.5deg, #010101, #1a0e01);
   overflow: hidden;
@@ -25,17 +24,17 @@
   letter-spacing: normal;
 }
 @media screen and (max-width: 1100px) {
-  .aboutUs1 {
+  .aboutUs {
     height: auto;
   }
 }
 @media screen and (max-width: 750px) {
-  .aboutUs1 {
+  .aboutUs {
     gap: 72px 144px;
   }
 }
 @media screen and (max-width: 450px) {
-  .aboutUs1 {
+  .aboutUs {
     gap: 36px 144px;
   }
 }

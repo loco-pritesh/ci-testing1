@@ -1,6 +1,6 @@
 import * as React from "react";
 import { FunctionComponent, useMemo, type CSSProperties } from "react";
-import * as styles from "./frame-component3.module.css";
+import * as styles from "./frame-component31.module.css";
 
 export type FrameComponent3Type = {
   rectangle23?: string;

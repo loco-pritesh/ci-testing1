@@ -1,10 +1,11 @@
 import * as React from "react";
 import { FunctionComponent, useCallback } from "react";
-import * as styles from "./frame-component4.module.css";
+import { navigate } from "gatsby";
+import * as styles from "./frame-component41.module.css";
 
 const FrameComponent4: FunctionComponent = () => {
   const onAboutUsTextClick = useCallback(() => {
-    // Please sync "About us" to the project
+    navigate("/about-us");
   }, []);
 
   const onPortfolioTextClick = useCallback(() => {

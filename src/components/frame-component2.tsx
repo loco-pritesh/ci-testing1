@@ -1,7 +1,7 @@
 import * as React from "react";
 import { FunctionComponent } from "react";
 import FrameComponent3 from "./frame-component3";
-import * as styles from "./frame-component2.module.css";
+import * as styles from "./frame-component21.module.css";
 
 const FrameComponent2: FunctionComponent = () => {
   return (

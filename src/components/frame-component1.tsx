@@ -1,6 +1,6 @@
 import * as React from "react";
 import { FunctionComponent } from "react";
-import * as styles from "./frame-component1.module.css";
+import * as styles from "./frame-component11.module.css";
 
 const FrameComponent1: FunctionComponent = () => {
   return (
