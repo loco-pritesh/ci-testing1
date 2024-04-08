@@ -1,64 +1,70 @@
-.fire1Icon,
-.frameChild {
-  position: relative;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-.frameChild {
-  align-self: stretch;
-  height: 277px;
-  border-radius: var(--br-xl);
-  max-width: 100%;
-  object-fit: cover;
-}
-.fire1Icon {
-  width: 25px;
-  height: 25px;
-}
-.individualLabels {
-  height: 33px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: var(--padding-5xs) 0 0;
-  box-sizing: border-box;
-}
-.followers {
+.ourTeam {
   margin: 0;
+  width: 159px;
   position: relative;
   font-size: inherit;
-  line-height: 187.5%;
-  font-weight: 500;
+  line-height: 180.5%;
+  font-weight: 600;
   font-family: inherit;
+  display: inline-block;
+  box-sizing: border-box;
+  padding-right: var(--padding-xl);
 }
-.individualLabelsParent {
-  flex-direction: row;
-  gap: var(--gap-4xs);
-}
-.featureLabels,
-.individualLabelsParent,
-.rectangleParent {
+.frameGroup,
+.frameParent,
+.functionCall {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+  max-width: 100%;
 }
-.featureLabels {
+.frameGroup {
+  flex: 1;
   flex-direction: row;
-  padding: 0 var(--padding-22xl) 0 var(--padding-21xl);
+  gap: var(--gap-9xl);
+  min-width: 402px;
 }
-.rectangleParent {
-  height: 343px;
+.frameParent,
+.functionCall {
+  box-sizing: border-box;
+}
+.frameParent {
+  width: 1284px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 var(--padding-xl) 0 0;
+  gap: var(--gap-9xl);
+  font-size: var(--font-size-lgi);
+}
+.functionCall {
+  width: 1396px;
   flex-direction: column;
-  gap: var(--gap-6xl);
+  padding: 0 0 var(--padding-smi) var(--padding-47xl);
+  gap: var(--gap-34xl);
   text-align: left;
-  font-size: var(--font-size-3xl);
+  font-size: var(--font-size-6xl);
   color: var(--color-white);
-  font-family: var(--font-rubik);
+  font-family: var(--base);
+}
+@media screen and (max-width: 1275px) {
+  .functionCall {
+    padding-left: var(--padding-14xl);
+    padding-right: var(--padding-14xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 750px) {
+  .frameGroup {
+    flex-wrap: wrap;
+    min-width: 100%;
+  }
+  .functionCall {
+    gap: 26px 53px;
+  }
 }
 @media screen and (max-width: 450px) {
-  .followers {
-    font-size: var(--font-size-lg);
-    line-height: 33px;
+  .ourTeam {
+    font-size: var(--font-size-xl);
+    line-height: 36px;
   }
 }
